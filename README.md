@@ -38,4 +38,3 @@ be further improved with techniques like data augmentation, dropout, and batch n
 ##OUTPUT
 
 <img width="1770" height="401" alt="Image" src="https://github.com/user-attachments/assets/59feeeda-9c59-4bf1-824b-5efa9a5bc2e4" />
-<img width="1741" height="463" alt="Image" src="https://github.com/user-attachments/assets/cdd2b65a-2b0e-47da-9c4f-dad11e1eff38" />
