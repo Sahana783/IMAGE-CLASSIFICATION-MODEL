@@ -30,14 +30,11 @@ max-pooling layer that reduces the spatial resolution by half. This pattern is r
 The model is then transferred to the selected computing device using model.to(device). The loss function used is Cross Entropy Loss, which is ideal for multi-class classification problems as it measures the difference between the predicted class distribution and the actual label distribution. The Adam optimizer is chosen for updating the model weights, known for its adaptive learning rate and efficiency in practice.
 
 The training loop runs for 10 epochs. For each batch of images, the model computes predictions, calculates the loss, performs backpropagation to compute gradients, and updates the weights using the optimizer.
-The loss is accumulated to monitor training performance. After training, the model is evaluated on the test dataset in a no-gradient context (torch.no_grad()) for efficiency. Predictions are compared with actual labels to compute accuracy.
-
-Finally, the model's predictions are visualized. A batch of test images is displayed using matplotlib, and the predicted and actual class labels for the first four images are printed. The imshow() function reverses the earlier normalization for correct image display.
+The loss is accumulated to monitor training performance. After training, the model is evaluated on the test dataset in a no-gradient context (torch.no_grad()) for efficiency. Predictions are compared with actual labels to compute accuracy.Finally, the model's predictions are visualized. A batch of test images is displayed using matplotlib, and the predicted and actual class labels for the first four images are printed. The imshow() function reverses the earlier normalization for correct image display.
 
 This CNN model has a wide range of practical applications in image classification, particularly in areas like autonomous vehicles (identifying objects), security systems (face or object recognition), medical diagnostics (classifying MRI or X-ray images), and even mobile apps for real-time image tagging or visual search. It demonstrates how CNNs can be trained effectively using PyTorch with basic components and can
 be further improved with techniques like data augmentation, dropout, and batch normalization. This script provides a foundational template for anyone entering the field of deep learning and computer vision.
 
 ##OUTPUT
-
 img width="1770" height="401" alt="Image" src="https://github.com/user-attachments/assets/36b76df5-b024-46b6-b660-0b02e3fefe7c" />
 <img width="1741" height="463" alt="Image" src="https://github.com/user-attachments/assets/548dbfd7-b935-4a91-a245-4e61dbb3bbba" />
